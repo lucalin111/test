@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DWWM4</title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</head>
+<body>
+	<br /><br />
+
+	<div class="breadcrumb flat">
+		<a href="#" class="active">acceuil</a>
+		<a href="#">espace personnel</a>
+	
+	</div>
+	
+	<div class="slider">
+		<div class="carous">
+			<img src="https://w7.pngwing.com/pngs/639/327/png-transparent-naruto-uzumaki-sasuke-uchiha-kakashi-hatake-asuma-sarutobi-naruto-shippuden-naruto-vs-sasuke-naruto-cartoon-fictional-character-naruto-thumbnail.png" alt="" class="pic" width="400px">
+			<img src="https://w7.pngwing.com/pngs/271/842/png-transparent-naruto-illustration-naruto-uzumaki-kakashi-hatake-sasuke-uchiha-naruto-shippuden-ultimate-ninja-storm-3-orochimaru-naruto-manga-chibi-human-thumbnail.png" alt="" class="pic"  width="200px">
+			<img src="https://w7.pngwing.com/pngs/454/700/png-transparent-naruto-uzumaki-sakura-haruno-sasuke-uchiha-kushina-uzumaki-naruto-sasuke-uchiha-fictional-character-cartoon-thumbnail.png" alt="" class="pic" width="400px">
+			<img src="https://w7.pngwing.com/pngs/263/1012/png-transparent-itachi-uchiha-sasuke-uchiha-naruto-shipp%C5%ABden-naruto-uzumaki-uchiha-clan-naruto-face-manga-head-thumbnail.png" alt="" class="pic"width="400px">
+			<img src="https://w7.pngwing.com/pngs/492/750/png-transparent-naruto-uzumaki-minato-namikaze-sasuke-uchiha-kushina-uzumaki-kurama-naruto-thumbnail.png" alt="" class="pic" width="400px">
+		  </div>
+	
+	
+		<div class="pic-ctn">
+			<img src="https://w7.pngwing.com/pngs/639/327/png-transparent-naruto-uzumaki-sasuke-uchiha-kakashi-hatake-asuma-sarutobi-naruto-shippuden-naruto-vs-sasuke-naruto-cartoon-fictional-character-naruto-thumbnail.png" alt="" class="pic" width="400px">
+			<img src="https://w7.pngwing.com/pngs/271/842/png-transparent-naruto-illustration-naruto-uzumaki-kakashi-hatake-sasuke-uchiha-naruto-shippuden-ultimate-ninja-storm-3-orochimaru-naruto-manga-chibi-human-thumbnail.png" alt="" class="pic"  width="200px">
+			<img src="https://w7.pngwing.com/pngs/454/700/png-transparent-naruto-uzumaki-sakura-haruno-sasuke-uchiha-kushina-uzumaki-naruto-sasuke-uchiha-fictional-character-cartoon-thumbnail.png" alt="" class="pic" width="400px">
+			<img src="https://w7.pngwing.com/pngs/263/1012/png-transparent-itachi-uchiha-sasuke-uchiha-naruto-shipp%C5%ABden-naruto-uzumaki-uchiha-clan-naruto-face-manga-head-thumbnail.png" alt="" class="pic"width="400px">
+			<img src="https://w7.pngwing.com/pngs/492/750/png-transparent-naruto-uzumaki-minato-namikaze-sasuke-uchiha-kushina-uzumaki-kurama-naruto-thumbnail.png" alt="" class="pic" width="400px">
+		</div>
+	</div>
+	
+
+
+
+
+
+
+</body>
+</html>
+<style>
+ 
+
+
+
+
+
+
+
+
+
+
+* {margin: 0; padding: 0;}
+
+html, body {min-height: 100%;}
+
+body {
+	background-color: fuchsia ;
+	font-family: 'Merriweather Sans', arial, verdana;
+}
+
+.breadcrumb {
+	
+	display: inline-block;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.35);
+	overflow: hidden;
+	border-radius: 5px;
+	
+	counter-reset: flag; 
+}
+
+.breadcrumb a {
+	text-decoration: none;
+	outline: none;
+	display: block;
+	float: left;
+	font-size: 12px;
+	line-height: 36px;
+	color:white;
+	
+	padding: 0 10px 0 60px;
+	background: #666;
+	background: linear-gradient(#666, #333);
+	position: relative;
+}
+
+.breadcrumb a:first-child {
+	padding-left: 46px;
+	border-radius: 5px 0 0 5px; 
+}
+.breadcrumb a:first-child:before {
+	left: 18px;
+}
+.breadcrumb a:last-child {
+	border-radius: 0 5px 5px 0;
+	padding-right: 10px;
+}
+
+
+.breadcrumb a.active, .breadcrumb a:hover{
+	background: #333;
+	background: linear-gradient(#333, #000);
+}
+.breadcrumb a.active:after, .breadcrumb a:hover:after {
+	background: #333;
+	background: linear-gradient(135deg, #333, #000);
+}
+
+
+.breadcrumb a:after {
+	content: '';
+	position: absolute;
+	top: 0; 
+	right: -18px;
+	width: 36px; 
+	height: 36px;
+	
+	transform: scale(0.707) rotate(45deg);
+	
+	z-index: 1;
+	
+	background: #666;
+	background: linear-gradient(135deg, #666, #333);
+	
+	box-shadow: 
+		2px -2px 0 2px rgba(0, 0, 0, 0.4), 
+		3px -3px 0 2px rgba(255, 255, 255, 0.1);
+
+	border-radius: 0 5px 0 50px;
+}
+
+.breadcrumb a:last-child:after {
+	content: none;
+}
+
+.breadcrumb a:before {
+	content: counter(flag);
+	counter-increment: flag;
+	text-align: center;
+	border-radius: 100%;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	margin: 8px 0;
+	position: absolute;
+	top: 0;
+	left: 30px;
+	background: #444;
+	background: linear-gradient(#444, #222);
+	font-weight: bold;
+}
+
+
+.flat a, .flat a:after {
+	background: white;
+	color: black;
+	transition: all 0.5s;
+}
+.flat a:before {
+	background: white;
+	box-shadow: 0 0 0 1px #ccc;
+}
+.flat a:hover, .flat a.active, 
+.flat a:hover:after, .flat a.active:after{
+	background: #9EEB62;
+}
+
+html, body {
+  margin: 10px;
+}
+
+.pic-ctn {
+  /* width: 100vw;
+  height: 200px; */
+   /* transform: translate(0,-800px); */
+}
+
+/* @keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+} */
+
+.pic-ctn {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  /* margin-top: 50vh */
+}
+
+.pic-ctn > img {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 50%;
+  opacity:0;
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+
+
+
+.pic-ctn {
+  /* width: 100vw;
+  height: 200px; */
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity:0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity:0.5;
+  }
+  20% {
+    transform: translateX(0);
+    opacity:1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity:0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity:0;
+  }
+}
+
+.carous {
+  position: relative;
+  width: 50%;
+  height: 300px;
+  /* margin-top:50vh */
+}
+
+.carous > img {
+  position: absolute;
+  width: 80%;
+  top: 40%;
+  left: 15%;
+  opacity:0;
+  /* max-height: 300px; */
+  animation: display 10s infinite;
+}
+
+img:nth-child(2) {
+  animation-delay: 2s;
+}
+img:nth-child(3) {
+  animation-delay: 4s;
+}
+img:nth-child(4) {
+  animation-delay: 6s;
+}
+img:nth-child(5) {
+  animation-delay: 8s;
+}
+
+
+
+.carous {
+  /* width: 100vw;
+  height: 600px; */
+  /* transform:translate(700px,0) */
+  
+}
+
+
+
+.slider{
+	display: flex;
+	/* background-color: red; */
+	width: 80%;
+	box-sizing: border-box;
+}
+
+
+
+
+
+
+
+</style>
